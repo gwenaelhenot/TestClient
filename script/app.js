@@ -3,6 +3,9 @@ var citiesList = $('#citiesList');
 var map;
 var openInfo;
 var markers = [];
+var stationsList = $('#stationsList');
+
+stationsList.append(' Veuillez sélectionner une ville pour afficher la liste des stations.');
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -80,7 +83,6 @@ citiesList.change(function(ev){
                 list[data[key].number] = data[key];
             }
 
-            stationsList = $('#stationsList');
             stationsList.html('<table id=stationsTable class="table">');
             stationsTable = $('#stationsTable');
             stationsTable.append('<tr><th>N°</th><th>Nom</th><th>Adresse</th><th>CB</th><th>Statut</th><th>Nb Bornes</th><th>Vélos</th><th>Places libres</th></tr>')
