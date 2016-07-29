@@ -1,34 +1,7 @@
-html, body {
-    height: 100%; margin: 0; padding: 0;
-}
 
 #map {
     display:flex;
     height:500px;
     width:45%;
     position: fixed;
-}
-
-#stationsList{
-    width:45%;
-}
-
-.header{
-    height:15%;
-}
-
-.body{
-    display:flex;
-    flex-direction: column;
-}
-
-.main{
-    display:flex;
-    flex-direction: column;
-}
-
-.content{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
